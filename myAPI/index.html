@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .user-container
+        {
+            display:flex;
+            background-color:white;
+            padding: 1rem;
+            margin:2rem;
+            border-radius: 1rem;
+            gap:1rem;
+            transition: all 0.5s;
+        }
+       
+        body{
+            background-image: linear-gradient(to right top, #6bd1bb, hsl(159, 55%, 65%), #7fdbaa, #8edfa0, #9fe395, #afdd82, #c0d772, #d1cf64, #e1bb54, #eea64f, #f79053, #fb7a5f);
+            min-height: 100vh;
+        }
+        .user-avatar{
+            border-radius:50%;
+            height:8rem;
+            width: 8rem;
+            object-fit: cover;
+        }
+        .user-name{
+            font-size: 1.4rem;
+            font-family:"pacifico",cursive;
+        }
+        .user-container:hover{
+            transform: scale(1.1);
+            box-shadow: 15px 15px 38px -11px rgba(0, 0, 0, 0.5);
+        }
+        .user-container:hover .user-name{
+            color:crimson;
+        }
+        .user-form{
+            margin:2rem;
+        }
+        .edit-user-form{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <script src="index.js"></script>
+</body>
+</html>
